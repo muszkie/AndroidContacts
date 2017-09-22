@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dodaj"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rafzz.baza.Add">
+
+    <TextView
+        android:text="Imię: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/LabelImie"
+        android:cursorVisible="false"
+        android:contextClickable="false"
+        android:clickable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/LabelImie"
+        android:id="@+id/editTextImie"
+        android:background="@color/grey"
+        android:layout_alignRight="@+id/editTextWiek"
+        android:layout_alignEnd="@+id/editTextWiek" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextWiek"
+        android:background="@color/grey"
+        android:layout_alignTop="@+id/labelWiek"
+        android:layout_toRightOf="@+id/labelWiek"
+        android:layout_alignRight="@+id/foto"
+        android:layout_alignEnd="@+id/foto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextDay"
+        android:background="@color/grey"
+        android:layout_below="@+id/labelDay"
+        android:layout_alignLeft="@+id/labelDay"
+        android:layout_alignStart="@+id/labelDay"
+        android:layout_toStartOf="@+id/labelYear"
+        android:layout_alignRight="@+id/labelDay"
+        android:layout_alignEnd="@+id/labelDay" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextMonth"
+        android:background="@color/grey"
+        android:layout_below="@+id/labelMonth"
+        android:layout_alignLeft="@+id/labelMonth"
+        android:layout_alignStart="@+id/labelMonth"
+        android:layout_alignRight="@+id/labelMonth"
+        android:layout_alignEnd="@+id/labelMonth" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextYear"
+        android:background="@color/grey"
+        android:layout_below="@+id/labelYear"
+        android:layout_alignLeft="@+id/labelYear"
+        android:layout_alignStart="@+id/labelYear"
+        android:layout_alignRight="@+id/labelYear"
+        android:layout_alignEnd="@+id/labelYear" />
+
+    <Button
+        android:text="Zrob Zdjecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dispatchTakePictureIntent"
+        android:id="@+id/foto"
+        android:layout_below="@+id/editTextDay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="RRRR:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelYear"
+        android:layout_alignBaseline="@+id/labelDay"
+        android:layout_alignBottom="@+id/labelDay"
+        android:layout_alignRight="@+id/editTextWiek"
+        android:layout_alignEnd="@+id/editTextWiek" />
+
+    <TextView
+        android:text="MM:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelMonth"
+        android:layout_below="@+id/editTextImie"
+        android:layout_alignLeft="@+id/editTextImie"
+        android:layout_alignStart="@+id/editTextImie"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:text="Wiek: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelWiek"
+        android:layout_below="@+id/editTextImie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="DD:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelDay"
+        android:layout_alignBaseline="@+id/labelMonth"
+        android:layout_alignBottom="@+id/labelMonth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Zapisz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="save"
+        android:id="@+id/buttonZapisz"
+        android:layout_alignBaseline="@+id/foto"
+        android:layout_alignBottom="@+id/foto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/foto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp" />
+
+</RelativeLayout>

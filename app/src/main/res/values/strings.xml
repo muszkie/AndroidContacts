@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DataCollector</string>
+    <color name="grey">#C0C0C0</color>
+    <string name="add">Add</string>
+    <string name="removeAll">REMOVE ALL</string>
+    <string name="summary">SUMMARY</string>
+    <string name="remove">REMOVE</string>
+    <string name="edit">EDIT</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+    <string name="save">SAVE</string>
+    <string name="takePhoto">TAKE PHOTO</string>
+    <string name="removePhoto">REMOVE PHOTO</string>
+    <string name="addSummary">\nADDED: </string>
+
+    <string name="editSummary">\nEDITED: </string>
+    <string name="removeSummary">\nREMOVED ID: </string>
+    <string name="allRemoveSummary">\nREMOVED ALL</string>
+
+    <string name="engButton">ENG</string>
+    <string name="plButton">PL</string>
+</resources>

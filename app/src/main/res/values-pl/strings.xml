@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zbieracz Danych</string>
+    <string name="add">DODAJ</string>
+    <string name="removeAll">USUŃ WSZYSTKO</string>
+    <string name="summary">PODSUMOWANIE</string>
+    <string name="remove">USUN</string>
+    <string name="edit">EDYCJA</string>
+    <string name="name">imie</string>
+    <string name="age">wiek</string>
+    <string name="save">ZAPISZ</string>
+    <string name="takePhoto">ZRÓB ZDJĘCIE</string>
+    <string name="removePhoto">USUŃ ZDJĘCIE</string>
+    <string name="addSummary">\nDODANO: </string>
+
+    <string name="editSummary">\nEDYTOWANO: </string>
+    <string name="removeSummary">\nUSUNIĘTO ID: </string>
+    <string name="allRemoveSummary">\nUSUNIĘTO WSZYSTKO</string>
+
+    <string name="engButton">ENG</string>
+    <string name="plButton">PL</string>
+</resources>
